@@ -8,45 +8,58 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Professional document processing theme */
-    --background: 249 250 251;
-    --foreground: 31 41 55;
+    /* Professional document processing theme - WCAG AA compliant */
+    --background: 210 20% 98%;        /* #f9fafb - soft gray background */
+    --foreground: 217 19% 12%;        /* #111827 - near-black for maximum readability */
 
-    --card: 255 255 255;
-    --card-foreground: 31 41 55;
+    --card: 0 0% 100%;                /* #ffffff - pure white cards */
+    --card-foreground: 217 19% 12%;   /* #111827 - consistent with foreground */
 
-    --popover: 255 255 255;
-    --popover-foreground: 31 41 55;
+    --popover: 0 0% 100%;             /* #ffffff - white popover */
+    --popover-foreground: 217 19% 12%; /* #111827 - consistent text */
 
-    --primary: 37 99 235;
-    --primary-foreground: 248 250 252;
-    --primary-light: 219 234 254;
-    --primary-dark: 29 78 216;
+    /* Primary brand color - Rich blue for trust and reliability */
+    --primary: 217 91% 60%;           /* #2563eb - rich blue */
+    --primary-foreground: 0 0% 100%;  /* White text on blue */
+    --primary-light: 214 95% 93%;     /* #bfdbfe - light blue for highlights */
+    --primary-dark: 217 91% 55%;      /* #1d4ed8 - darker blue for hover states */
 
-    --secondary: 248 250 252;
-    --secondary-foreground: 51 65 85;
+    /* Secondary palette */
+    --secondary: 210 20% 98%;         /* #f8fafc - very light gray */
+    --secondary-foreground: 215 16% 47%; /* #4b5563 - cool gray for reduced weight */
 
-    --muted: 241 245 249;
-    --muted-foreground: 100 116 139;
+    /* Muted colors */
+    --muted: 210 20% 96%;             /* #f1f5f9 - muted background */
+    --muted-foreground: 215 16% 47%;  /* #4b5563 - muted text */
 
-    --accent: 34 197 94;
-    --accent-foreground: 255 255 255;
+    /* Success - Vibrant emerald green */
+    --accent: 162 73% 39%;            /* #10b981 - emerald green */
+    --accent-foreground: 0 0% 100%;   /* White text on green */
 
-    --warning: 245 158 11;
-    --warning-foreground: 255 255 255;
+    /* Warning - Warm amber */
+    --warning: 45 93% 47%;            /* #f59e0b - amber */
+    --warning-foreground: 0 0% 100%;  /* White text on amber */
 
-    --destructive: 239 68 68;
-    --destructive-foreground: 255 255 255;
+    /* Error - Strong rose red */
+    --destructive: 0 84% 60%;         /* #dc2626 - rose red */
+    --destructive-foreground: 0 0% 100%; /* White text on red */
 
-    --border: 226 232 240;
-    --input: 226 232 240;
-    --ring: 37 99 235;
+    /* UI elements */
+    --border: 220 13% 91%;            /* #e5e7eb - light gray borders */
+    --input: 220 13% 91%;             /* #e5e7eb - input borders */
+    --ring: 217 91% 60%;              /* #2563eb - focus ring matches primary */
 
-    /* Custom semantic tokens */
-    --upload-zone: 239 246 255;
-    --upload-border: 147 197 253;
-    --success: 34 197 94;
-    --processing: 245 158 11;
+    /* Document processing specific tokens */
+    --upload-zone: 214 95% 93%;       /* #bfdbfe - light blue upload zone */
+    --upload-border: 217 91% 60%;     /* #2563eb - blue upload border */
+    --success: 162 73% 39%;           /* #10b981 - success state */
+    --processing: 45 93% 47%;         /* #f59e0b - processing state */
+    
+    /* Document viewer highlight colors (30% opacity effect) */
+    --highlight-text: 214 95% 93%;    /* #bfdbfe - light blue for text regions */
+    --highlight-tables: 142 76% 85%;  /* #bbf7d0 - light green for tables */
+    --highlight-images: 54 91% 77%;   /* #fde68a - light yellow for images */
+    --highlight-headings: 322 81% 89%; /* #fbcfe8 - light pink for headings */
     
     /* Gradients */
     --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-dark)));
